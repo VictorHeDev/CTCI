@@ -99,7 +99,7 @@ def sumDigits(n):
    1. State a naive approach (do not code)
 4. Optimize
    1. Talk through and see if BF approach works with an example
-   2. Talk about Time/Space tradeoffs (do hashtabes help?)
+   2. Talk about Time/Space tradeoffs (do hashtables help?)
 5. Walk Through
    1. Derive optimal approach and walk through it with examples
 6. Implement
@@ -111,4 +111,27 @@ def sumDigits(n):
    3. Start small -- don't jump into using large test cases! Simple is better
    4. Fix bugs carefully
 
-Page 73
+Best Conceivable Runtime (BCR)
+After getting the time complexity to be the smallest possible, then optimize for space complexity if possible
+
+What does "Good Code" look like?
+- Correctness
+  - Appropriate Code Reuse/
+  - Error checking (through ASSERT statements or if-statements)
+- Efficient
+- Simple
+- Readable
+  - Modularity
+- Maintainable
+  - Use data structures generously
+  - Flexible robust
+
+
+# VIII The Offer and Beyond
+### When evaluating an offer, some things to keep in mind
+The financial package includes:
+- Signing Bonus, Relocation, and other One Time Perks
+- Cost of Living Difference
+- Annual Bonus (usually in the 3%-30% range)
+- Stock options and Grants
+
