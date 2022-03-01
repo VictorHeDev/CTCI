@@ -59,6 +59,17 @@ class LinkedList:
         for v in values:
             self.add(v)
 
+    def delete(self, value):
+        n = self.head
+        if n.value == value:
+            return self.head.next
+        while n.next is not None:
+            if n.next.value == value:
+                n.next = n.next.next
+                return self.head
+            n = n.next
+        return self.head
+
     @classmethod
     def generate(cls, k, min_value, max_value):
         return cls(random.choices(range(min_value, max_value), k=k))
