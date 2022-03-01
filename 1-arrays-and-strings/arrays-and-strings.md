@@ -17,4 +17,4 @@ In practice
 
 Also called Dynamic Arrays, will grow as you append items.
 
-Page 91
+Page 88
