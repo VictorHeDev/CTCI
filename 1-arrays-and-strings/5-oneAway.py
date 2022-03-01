@@ -21,8 +21,8 @@ def one_edit_replace(s1, s2):
     Replacement happens when the strings are different in only one place
     '''
     found_difference = False
-    for i in range(len(s1)):
-        if s1[i] != s2[i]:
+    for c1, c2 in zip(s1, s2):
+        if c1 != c2:
             if found_difference:
                 return False
         found_difference = True
@@ -46,6 +46,6 @@ def one_edit_insert(s1, s2):
     return True
 
 
-print(one_edit_away('pale', 'ple'))
-print(one_edit_away('pale', 'pale'))
-print(one_edit_away('pale', 'bake'))
+print(one_edit_away('pale', 'ple'))     # True
+print(one_edit_away('pale', 'pale'))    # True
+print(one_edit_away('pale', 'bake'))    # False
