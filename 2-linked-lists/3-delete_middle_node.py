@@ -14,5 +14,3 @@ def delete_middle_node(head, target_node):
 
         prev = curr
         curr = curr.next
-
-
