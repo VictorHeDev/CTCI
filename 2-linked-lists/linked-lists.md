@@ -38,3 +38,11 @@ Node deleteNode(Node head, int d) {
   return head;
 }
 ```
+
+The "Runner" Technique
+The "runner" (or second pointer) means that you iterate through the linked list with 2 pointers simultaneously. The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each one node that the "slow" node iterates through.
+
+Recursive Problems
+A number of linked list questions rely on recursion. Recursive algorithms take at least O(n) space, where n is the depth of the recursive call.
+
+Page 94
