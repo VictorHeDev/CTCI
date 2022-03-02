@@ -45,4 +45,6 @@ The "runner" (or second pointer) means that you iterate through the linked list 
 Recursive Problems
 A number of linked list questions rely on recursion. Recursive algorithms take at least O(n) space, where n is the depth of the recursive call.
 
-Page 94
+LESSONS/TECHNIQUES
+- use a set to check if LL node.value has been seen
+- 

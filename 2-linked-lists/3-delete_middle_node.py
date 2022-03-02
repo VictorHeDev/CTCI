@@ -4,6 +4,7 @@ first and last node, not necessarily the exact middle) of a singly linked
 list, given only access to that node
 '''
 
+
 def delete_middle_node(head, target_node):
     prev = head
     curr = head.next
