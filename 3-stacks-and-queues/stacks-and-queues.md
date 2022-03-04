@@ -21,4 +21,6 @@ A queue uses FIFO (first-in-first-out) ordering. Items are removed from the data
 - peek(): return the top of the queue
 - isEmpty(): return true if and only if the queue is empty
 
-Queue are often used in breadth-first search or implementing a cache. 
+Queue are often used in breadth-first search or implementing a cache.
+
+Page 99
