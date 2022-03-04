@@ -21,7 +21,13 @@ def is_palindrome_brute(head):
 
     return True
 
+
 def is_palindrome_runner(ll):
+    '''
+    use a stack to keep track of the first half of reversed list
+    use a slow and a fast runner
+    after the fast runner reaches the end of the LL, we can start popping off the stack and comparing it to the second half of the LL (by moving slow runner forward)
+    '''
     fast = slow = ll.head
     stack = []
 
@@ -42,6 +48,8 @@ def is_palindrome_runner(ll):
 
 
 def is_palindrome_constant_space(ll):
+    # reverse half of the linked list and compare
+
     slow = ll.head
     if not slow or not slow.next:
         return True
@@ -108,3 +116,4 @@ def is_palindrome_recursive(ll):
             return False, None
 
     return recursive_transverse(ll.head, get_len(ll.head))[0]
+    
