@@ -50,8 +50,12 @@ class LinkedList:
         return size
 
 
-# Animal Definitions - it is important for Cat and Dog to inherit from Animal because dequeue_any() needs to be able to support returning both the Cat and Dog objects
 class Animal:
+    '''
+    Animal Definitions - it is important for Cat and Dog to inherit from Animal
+    because dequeue_any() needs to be able to support returning both the Cat
+    and Dog objects
+    '''
     def __init__(self, name) -> None:
         self.name = name
         self.time_admitted = time.time()
