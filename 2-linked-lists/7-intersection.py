@@ -8,9 +8,16 @@ the they are intersecting.
 
 def if_intersect(head1, head2):
     curr1 = head1
+    curr2 = head2
     tracker = set()
 
     while curr1 is not None:
-        
+        tracker.add(curr1)
+        curr1 = curr1.next
 
+    while curr2 is not None:
+        if curr2 in tracker:
+            return True
+
+    return False
 
