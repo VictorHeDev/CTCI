@@ -16,7 +16,8 @@ OUTPUT: (9 -> 1 -> 2) => 912
 
 def sum_lists(ll_a, ll_b):
     n1, n2 = ll_a.head, ll_b.head
-    ll = LinkedList()
+    ll3 = LinkedList()
+
     carry = 0
     while n1 or n2:
         result = carry
@@ -27,18 +28,19 @@ def sum_lists(ll_a, ll_b):
             result += n2.value
             n2 = n2.next
 
-        ll.add(result % 10)
+        ll3.add(result % 10)
         carry = result // 10
 
     if carry:
-        ll.add(carry)
+        ll3.add(carry)
 
-    return ll
+    return ll3
 
 
 def addTwoNumbers(self, l1, l2):
     dummy = cur = ListNode(0)
     carry = 0
+
     while l1 or l2 or carry:
         if l1:
             carry += l1.val
@@ -46,7 +48,8 @@ def addTwoNumbers(self, l1, l2):
         if l2:
             carry += l2.val
             l2 = l2.next
-        cur.next = ListNode(carry%10)
+        cur.next = ListNode(carry % 10)
         cur = cur.next
         carry //= 10
+
     return dummy.next
