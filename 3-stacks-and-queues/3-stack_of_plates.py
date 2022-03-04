@@ -61,8 +61,8 @@ class Stack:
 
 class SetOfStacks:
     def __init__(self, capacity) -> None:
-          self.capacity = capacity
-          self.stacks = []
+        self.capacity = capacity
+        self.stacks = []
 
     def get_last_stack(self):
         if not self.stacks:
