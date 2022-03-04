@@ -116,4 +116,3 @@ def is_palindrome_recursive(ll):
             return False, None
 
     return recursive_transverse(ll.head, get_len(ll.head))[0]
-    
