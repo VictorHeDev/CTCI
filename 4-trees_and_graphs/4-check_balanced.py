@@ -10,4 +10,14 @@ each subtree
 '''
 
 
+def is_balanced(binary_tree):
+    if not binary_tree:
+        return (True, 0)
+    left_balance, left_depth = is_balanced(binary_tree.left)
+    if not left_balance:
+        return (False, None)
+    right_balance, right_depth = is_balanced(binary_tree.right)
+    if not right_balance or abs(left_depth - right_depth) > 1:
+        return (False, None)
 
+    return (True, max(right_depth, left_depth) + 1)
