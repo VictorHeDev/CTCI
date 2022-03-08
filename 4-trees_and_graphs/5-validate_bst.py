@@ -30,15 +30,15 @@ def validate_tree_node(node, left_bound, right_bound):
 
 # solution
 def check_bst(tree):
-    return _check_best(tree.root)
+    return _check_bst(tree.root)
 
 
-def _check_bst(node, min=None, max=None):
-    if node is None:
+def _check_bst(n, min=None, max=None):
+    if n is None:
         return True
 
-    if (min is not None and node.data <= min) or (max is not None and node.data > max):
+    if (min is not None and n.data <= min) or (max is not None and n.data > max):
         return False
-    if not _check_best(node.left, min, node.data) or not _check_bst(node.right, node.data, max):
+    if not _check_bst(n.left, min, n.data) or not _check_bst(n.right, n.data, max):
         return False
     return True
