@@ -29,11 +29,11 @@ def validate_tree_node(node, left_bound, right_bound):
 
 
 # solution
-def check_bst(root):
-    return _check_best(root, null, null)
+def check_bst(tree):
+    return _check_best(tree.root)
 
 
-def _check_bst(node, min, max):
+def _check_bst(node, min=None, max=None):
     if node is None:
         return True
 

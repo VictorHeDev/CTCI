@@ -14,5 +14,3 @@ APPROACH 2
 - think about cycles -- don't want to get stuck in an infinite route
 
 '''
-
-
