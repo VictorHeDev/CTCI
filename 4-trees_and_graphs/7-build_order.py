@@ -14,3 +14,22 @@ APPROACH 2
 - think about cycles -- don't want to get stuck in an infinite route
 
 '''
+
+def determine_build_order(projects, dependencies):
+    dependency_tree = {p: set() for p in projects}
+    build_order = []
+    unbuilt_projects = set(projects)
+    for dependency, project in dependencies:
+        dependency_tree[project].add(dependency)
+
+    while unbuilt_projects:
+        something_built = False
+        for project in list(unbuilt_projects):
+            dependencies = dependency_tree[project]
+            if not unbuilt_projects.intersection(dependencies):
+                build_order.append(project)
+                unbuilt_projects.remove(project)
+                something_built = True
+        if not something_built:
+            return "No built order exists"
+    return build_order
