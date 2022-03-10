@@ -8,12 +8,14 @@ INPUT:
 OUTPUT: f, e, a, b, d, c
 
 APPROACH 1 - topological sort algorithm
+TOPOLOGICAL SORT ALGORITHM
+- linearly ordering the vertices in a graph such that for every edge (a, b), a appears before b in the linear order
+
 APPROACH 2
 - DFS to find the build path
 - when we get to the end of the path and can't go any further, we know those terminating nodes can be the last projects to be built
 - think about cycles -- don't want to get stuck in an infinite route
 
-TOPOLOGICAL SORT ALGORITHM
 '''
 
 
