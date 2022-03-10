@@ -13,7 +13,9 @@ APPROACH 2
 - when we get to the end of the path and can't go any further, we know those terminating nodes can be the last projects to be built
 - think about cycles -- don't want to get stuck in an infinite route
 
+TOPOLOGICAL SORT ALGORITHM
 '''
+
 
 def determine_build_order(projects, dependencies):
     dependency_tree = {p: set() for p in projects}
